@@ -33,12 +33,6 @@ Para o projeto funcionar corretamente é necessário instalar as seguintes depen
 pip install -r requirements.txt
 ```
 
-instalado o projeto, é possível iniciar o bot com o comando:
-
-```
-python3 main.py
-```
-
 # configurações
 
 em ".env.example", possui os exemplos de configuração do bot para ser usado.
@@ -53,5 +47,13 @@ valores:
 - INSTAGRAM_NICKNAME: nome do perfil para o bot seguir
 - LOGIN_SAVE: se o bot deve salvar o login do usuario (True:sim/False:nao) 
 
-Erros ou dúvidas pode me contatar por este mesmo perfil.
 
+# rodar o projeto
+
+instalado o projeto, é possível iniciar o bot com o comando:
+
+```
+python3 main.py
+```
+
+Erros ou dúvidas pode me contatar por este mesmo perfil.
