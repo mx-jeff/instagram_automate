@@ -30,7 +30,7 @@ class Instagram:
         # scrolldown(self.driver, div)
         log("> Carregamento completo!")
         log("> Iniciando seguidores...")
-        profiles = div.find_elements_by_css_selector('li div._ab8w._ab94._ab97._ab9f._ab9k._ab9p._ab9-._aba8')
+        profiles = div.find_elements_by_css_selector('div._ab8w._ab94._ab97._ab9f._ab9k._ab9p._ab9-._aba8._abcm')
         log(f"{len(profiles)} followers found!")
 
         _follow(profiles)        
