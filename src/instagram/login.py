@@ -1,8 +1,8 @@
+import sys
 import logging
 from time import sleep
 from scrapper_boilerplate import explicit_wait, log
 from selenium.webdriver.common.by import By
-import sys
 
 
 def _login(driver, username, password):
@@ -17,9 +17,9 @@ def _login(driver, username, password):
 
     form = explicit_wait(driver, By.ID, 'loginForm') #self.driver.find_element_by_id('loginForm')
     
-    form.find_element_by_name('username').send_keys(username)
-    form.find_element_by_name('password').send_keys(password)
-    form.find_element_by_css_selector('.sqdOP.L3NKy.y3zKF').click()
+    form.find_element(By.NAME, 'username').send_keys(username)
+    form.find_element(By.NAME, 'password').send_keys(password)
+    form.find_element(By.CSS_SELECTOR, 'button._acan._acap._acas').click()
     sleep(10)
     # driver.save_screenshot('login.png')
     if driver.current_url == login_url:
@@ -28,3 +28,4 @@ def _login(driver, username, password):
         sys.exit()
 
     log("> Login realizado com sucesso!")
+    return True
